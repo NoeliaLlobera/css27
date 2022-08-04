@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 25px;
+}
+.centrar_boton {
+}
+
+/* Desktop */
+main {
+  display: flex;
+  width: 90vw;
+  max-width: 1000px;
+  height: auto;
+  margin: 80px auto 40px;
+}
+img {
+  margin-bottom: 10px;
+}
+h2 {
+  font-family: "Big Shoulders Display", fantasy;
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+h2 + p {
+  margin-bottom: 100px;
+}
+article {
+  padding: 60px 50px;
+  position: relative;
+}
+article:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 12px 0px 0px 12px;
+}
+article:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+article:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 12px 12px 0px;
+}
+button {
+  position: absolute;
+  bottom: 60px;
+  right: calc(50% - 64.09px);
+  background-color: hsl(0, 0%, 100%, 0.75);
+  border: none;
+  padding: 15px 30px;
+  mix-blend-mode: screen;
+  border-radius: 20px;
+}
+button > p {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Mobile */
+@media screen and (max-width: 375px) {
+  main {
+    flex-direction: column;
+  }
+  article:nth-child(1) {
+    border-radius: 12px 12px 0px 0px;
+  }
+  article:nth-child(3) {
+    border-radius: 0px 0px 12px 12px;
+  }
+}
+
+/* atribución */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: black;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
